@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: red;">html page returned from server!</h1>
+    {% if ime|length >= 6 %}
+        {% if ime == 'Nikola'%}
+        <h2 style="color: green;">imeto mu e {{ime}}, i e pogolemo/ednakvo na 6 karakteri</h2>
+        {% endif%}
+    {% elif ime == 'Nenad' %}
+        <h2 style="color:blue;">{{ime}}</h2>
+    {% endif%}
+    
+</body>
+</html>

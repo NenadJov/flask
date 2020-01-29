@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ciklus</h1>
+    <ul>
+        {% for x in lista%}
+        <li>{{x}} </li>
+        {% endfor%}
+    </ul>
+    <h2>this is dict:</h2>
+    {% for key, value in my_dict.items()%}
+        <span>{{key}} : {{value}} </span><br>
+    {% endfor%}
+</body>
+</html>

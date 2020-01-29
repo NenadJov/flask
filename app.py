@@ -6,6 +6,7 @@ def hello_world():
     return 'Hello, World!'
 
 @app.route('/student/<name>')
+def student_name(name):
     #print(name)
     #return 'Hello, Student!'
     return f'Hello, {name}!'
